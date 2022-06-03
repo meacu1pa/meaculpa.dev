@@ -13,3 +13,9 @@ git submodule update --init --recursive
 ```
 git submodule update --remote --merge
 ```
+
+## Add post
+
+```
+hugo new --kind post <name>
+```

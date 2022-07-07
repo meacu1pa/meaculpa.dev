@@ -58,7 +58,7 @@ params:
   profileMode:
     enabled: true
     title: Dominic Schuld
-    subtitle: "- driven by curiosity -"
+    subtitle: "~ driven by curiosity ~"
     imageUrl: "me.png"
     imageWidth: 200
     imageHeight: 200

@@ -58,16 +58,16 @@ params:
   profileMode:
     enabled: true
     title: Dominic Schuld
-    subtitle: "driven by curiosity."
+    subtitle: "- driven by curiosity -"
     imageUrl: "me.png"
     imageWidth: 200
     imageHeight: 200
     imageTitle: That's me!
     buttons:
-      - name: Blog
-        url: posts
       - name: About
         url: about-me
+      - name: Blog
+        url: posts
 
   # home-info mode
   homeInfoParams:

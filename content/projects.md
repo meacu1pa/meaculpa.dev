@@ -2,8 +2,6 @@
 title: "My project portfolio"
 description: "A few of the things I built over the years."
 weight: 1
-showToc: true
-TocOpen: true
 hidemeta: false
 comments: false
 hideSummary: false

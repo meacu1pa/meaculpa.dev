@@ -7,8 +7,6 @@ aliases: []
 tags: ["openfaas"]
 categories: ["tech"]
 author: Dom
-showToc: true
-TocOpen: true
 hidemeta: false
 comments: false
 disableShare: false

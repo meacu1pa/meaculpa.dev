@@ -2,7 +2,7 @@
 title: "Run functions efficiently on a single VPS, no k8s overhead!"
 date: 2022-06-03T11:30:00+00:00
 weight: 1
-aliases: ["/first"]
+aliases: []
 tags: ["openfaas"]
 categories: ["tech"]
 author: Dom

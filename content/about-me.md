@@ -2,7 +2,7 @@
 title: "About me"
 date: 2022-06-03T11:30:00+00:00
 weight: 1
-aliases: ["/first"]
+aliases: ["/about"]
 tags: []
 categories: []
 author: Dom

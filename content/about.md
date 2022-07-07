@@ -3,7 +3,6 @@ title: "About me"
 description: "Who am I?"
 weight: 1
 aliases: ["/about"]
-hidemeta: false
 comments: false
 disableShare: false
 hideSummary: false

@@ -7,7 +7,6 @@ aliases: []
 tags: ["openfaas"]
 categories: ["tech"]
 author: Dom
-hidemeta: false
 comments: false
 disableShare: false
 disableHLJS: false
@@ -96,7 +95,7 @@ The associated user for this password is `admin`.
 Open Caddyfile via `sudo nano /etc/caddy/Caddyfile` and add:
 
 ```text
-# required for automated lets-encrypt cert issueing & renewal
+# required for automated lets-encrypt cert issuing & renewal
 {
     email you@example.com 
 }

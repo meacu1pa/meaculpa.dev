@@ -10,7 +10,6 @@ author: Dom
 showToc: true
 TocOpen: false
 draft: true
-hidemeta: false
 comments: false
 hideSummary: false
 searchHidden: true

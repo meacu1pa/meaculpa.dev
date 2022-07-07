@@ -1,5 +1,5 @@
 ---
-title: "Setup faasd on Ubuntu Server 22.04"
+title: "Run functions efficiently on a single VPS, no k8s overhead!"
 date: 2022-06-03T11:30:00+00:00
 weight: 1
 aliases: ["/first"]
@@ -8,10 +8,10 @@ categories: ["tech"]
 author: Dom
 showToc: true
 TocOpen: true
-draft: true
+draft: false
 hidemeta: false
 comments: false
-description: "Bring the power of OpenFaaS to a single VPS, no k8s needed!"
+description: "Setup faasd on Ubuntu Server 22.04"
 canonicalURL: "https://canonical.url/to/page"
 disableShare: false
 disableHLJS: false
@@ -35,7 +35,7 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
-> quick & dirty
+> Info: This article is still considered WIP.
 
 SSH into server, `sudo apt update && sudo apt upgrade -y`
 

@@ -51,7 +51,7 @@ params:
     safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "meaculpa.dev"
+    text: "MEACULPA.DEV"
     #icon: /apple-touch-icon.png
     #iconHeight: 35
 
@@ -64,15 +64,10 @@ params:
     imageHeight: 200
     imageTitle: That's me!
     buttons:
-      - name: About
+      - name: About Me
         url: about-me
-      - name: Blog
+      - name: Blog Posts
         url: posts
-
-  # home-info mode
-  homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
 
   socialIcons:
     - name: github
@@ -102,19 +97,14 @@ params:
 menu:
   main:
     - identifier: categories
-      name: categories
+      name: CATEGORIES
       url: /categories/
-      weight: 10
-    - identifier: tags
-      name: tags
-      url: /tags/
       weight: 20
-# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
-# pygmentsUseClasses: true
-# markup:
-#     highlight:
-#         # anchorLineNos: true
-#         codeFences: true
-#         guessSyntax: true
-#         lineNos: true
-#         style: monokai
+    - identifier: tags
+      name: TAGS
+      url: /tags/
+      weight: 30
+    - identifier: about
+      name: ABOUT
+      url: /about-me/
+      weight: 10

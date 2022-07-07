@@ -16,4 +16,3 @@ ShowWordCount: false
 ## WIP
 
 I'm planning to update this page soon, stay tuned :)
-

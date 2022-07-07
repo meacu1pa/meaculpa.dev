@@ -4,19 +4,14 @@ description: "A few of the things I built over the years."
 weight: 1
 showToc: true
 TocOpen: true
-draft: false
 hidemeta: false
 comments: false
-disableShare: false
-disableHLJS: false
 hideSummary: false
 searchHidden: true
 ShowReadingTime: false
 ShowBreadCrumbs: false
 ShowPostNavLinks: true
 ShowWordCount: false
-ShowRssButtonInSectionTermList: true
-UseHugoToc: true
 ---
 
 Here you can find an unordered, probably incomplete list of little side projects I created over the years.

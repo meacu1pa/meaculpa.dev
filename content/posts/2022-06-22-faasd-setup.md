@@ -1,7 +1,7 @@
 ---
 title: "Run functions efficiently on a single VPS, no k8s overhead!"
 description: "Setup faasd on Ubuntu Server 22.04"
-date: 2022-06-22T11:30:00+00:00
+date: 2022-06-22
 weight: 1
 aliases: []
 tags: ["openfaas"]

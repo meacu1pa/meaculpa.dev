@@ -1,7 +1,7 @@
 ---
 title: "My 1st post"
 description: "Desc Text here"
-date: 2022-06-04T11:30:00+00:00
+date: 2022-06-04
 # weight: 1
 # aliases: ["/first"]
 tags: ["tag"]
@@ -12,18 +12,12 @@ TocOpen: false
 draft: true
 hidemeta: false
 comments: false
-description: "Desc Text here"
-canonicalURL: "https://canonical.url/to/page"
-disableShare: false
-disableHLJS: false
 hideSummary: false
 searchHidden: true
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
 ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-UseHugoToc: true
 cover:
     image: "<image path/url>" # image path/url
     alt: "<alt text>" # alt text

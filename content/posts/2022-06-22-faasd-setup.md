@@ -37,7 +37,7 @@ SSH into server, `sudo apt update && sudo apt upgrade -y`
 
 ## Install Caddy
 
-```
+```bash
 sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https
 curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
 curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/caddy-stable.list
@@ -47,7 +47,7 @@ sudo apt install caddy
 
 ## Install faasd
 
-```
+```bash
 mkdir ~/Downloads && cd ~/Downloads
 git clone https://github.com/openfaas/faasd --depth=1
 cd faasd
@@ -60,7 +60,7 @@ Change port mapping so `faasd gateway` only accepts calls via `localhost`:
 
 `sudo nano /var/lib/faasd/docker-compose.yaml`
 
-```
+```yaml
 gateway:
     [...]
     ports:
@@ -71,7 +71,7 @@ Then restart faasd services: `sudo systemctl daemon-reload && sudo systemctl res
 
 ### Enable firewall (optional)
 
-```
+```bash
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 sudo ufw allow ssh
@@ -83,9 +83,9 @@ sudo ufw enable
 
 ### Obtain faasd credentials
 
-Store output somewhere safe for later reference: 
+Store output somewhere safe for later reference:
 
-```
+```bash
 sudo cat /var/lib/faasd/secrets/basic-auth-password ;echo
 ```
 
@@ -95,7 +95,7 @@ The associated user for this password is `admin`.
 
 Open Caddyfile via `sudo nano /etc/caddy/Caddyfile` and add:
 
-```
+```text
 # required for automated lets-encrypt cert issueing & renewal
 {
     email you@example.com 
@@ -121,7 +121,7 @@ Visit `faasd.domain.tld` in your browser and login using the credentials obtaine
 Store your auth pw obtained earlier in a text file called `faasd.txt`.
 Then execute following commands on your local machine:
 
-```
+```bash
 export OPENFAAS_URL=https://faasd.domain.tld
 cat faasd.txt | faas-cli login --username admin --password-stdin
 faas-cli store deploy cows
@@ -130,7 +130,8 @@ faas-cli store deploy cows
 ## Use Caddy as a reverse proxy for a specific function
 
 Open Caddyfile via `sudo nano /etc/caddy/Caddyfile` and add:
-```
+
+```text
 cows.domain.tld {
     handle_path /* {
         rewrite * /function/cows{path}

@@ -1,10 +1,11 @@
 ---
 title: "My 1st post"
+description: "Desc Text here"
 date: 2022-06-04T11:30:00+00:00
 # weight: 1
 # aliases: ["/first"]
 tags: ["tag"]
-categories ["tech"]
+categories: ["tech"]
 author: Dom
 showToc: true
 TocOpen: false

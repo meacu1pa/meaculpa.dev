@@ -19,7 +19,6 @@ params:
   title: ExampleSite
   description: "ExampleSite description"
   keywords: [Blog, Portfolio, PaperMod]
-  author: Me
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto
@@ -65,7 +64,7 @@ params:
     imageTitle: That's me!
     buttons:
       - name: About Me
-        url: about-me
+        url: about
       - name: Blog Posts
         url: posts
 
@@ -96,15 +95,23 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    - identifier: categories
-      name: CATEGORIES
-      url: /categories/
+    - identifier: blog
+      name: BLOG
+      url: /posts/
       weight: 10
-    - identifier: tags
-      name: TAGS
-      url: /tags/
+    #- identifier: categories
+    #  name: CATEGORIES
+    #  url: /categories/
+    #  weight: 10
+    #- identifier: tags
+    #  name: TAGS
+    #  url: /tags/
+    #  weight: 20
+    - identifier: projects
+      name: PROJECTS
+      url: /projects/
       weight: 20
     - identifier: about
       name: ABOUT
-      url: /about-me/
+      url: /about/
       weight: 30

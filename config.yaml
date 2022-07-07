@@ -99,12 +99,12 @@ menu:
     - identifier: categories
       name: CATEGORIES
       url: /categories/
-      weight: 20
+      weight: 10
     - identifier: tags
       name: TAGS
       url: /tags/
-      weight: 30
+      weight: 20
     - identifier: about
       name: ABOUT
       url: /about-me/
-      weight: 10
+      weight: 30

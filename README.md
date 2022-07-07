@@ -22,13 +22,14 @@ git submodule update --remote --merge
 
 ### Develop
 
-Run development server with HMR:
+Run development server with HMR and include drafts:
 
 ```
 hugo server -D
 ```
 
 ### Add post
+
 ```
 hugo new --kind post <name>
 ```

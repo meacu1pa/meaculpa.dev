@@ -69,7 +69,7 @@ params:
     google:
       SiteVerificationTag: "XYZabc"
   label:
-    text: "MEACULPA.DEV"
+    text: "meaculpa.dev"
     #icon: /apple-touch-icon.png
     #iconHeight: 35
   profileMode:

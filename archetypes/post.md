@@ -1,22 +1,12 @@
 ---
-title: "My 1st post"
-description: "Desc Text here"
+title: "My post"
+description: "Description goes here"
+summary: "Summary here"
 date: 2022-06-04
-# weight: 1
-# aliases: ["/first"]
+aliases: []
 tags: ["tag"]
-categories: ["tech"]
-author: Dom
-showToc: true
-TocOpen: false
+categories: ["category1"]
 draft: true
-comments: false
-hideSummary: false
-searchHidden: true
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
 cover:
     image: "<image path/url>" # image path/url
     alt: "<alt text>" # alt text

@@ -1,23 +1,11 @@
 ---
 title: "Run functions efficiently on a single VPS, no k8s overhead!"
 description: "Setup faasd on Ubuntu Server 22.04"
+summary: "Setup faasd on Ubuntu Server 22.04"
 date: 2022-06-22
-weight: 1
 aliases: []
 tags: ["openfaas"]
 categories: ["tech"]
-author: Dom
-comments: false
-disableShare: false
-disableHLJS: false
-hideSummary: false
-searchHidden: true
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-UseHugoToc: true
 cover:
     image: "<image path/url>" # image path/url
     alt: "<alt text>" # alt text
@@ -30,9 +18,15 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
+## What is OpenFaas?
+
 > Info: This article is still considered WIP.
 
-SSH into server, `sudo apt update && sudo apt upgrade -y`
+[OpenFaaS](http://openfaas.com) is a cloud agnostic OpenSource project to run functions on your own terms. `faasd` packs the same punch, but you can host it on a single VPS, without all of the `k8s` overhead.
+
+Let's start setting it up:
+
+SSH into server, then `sudo apt update && sudo apt upgrade -y`.
 
 ## Install Caddy
 

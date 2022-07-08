@@ -1,13 +1,11 @@
 ---
 title: "My project portfolio"
-description: "A few of the things I built over the years."
-weight: 1
+description: "A list of a few of the things I built over the years."
+summary: "A list of a few of the things I built over the years."
 comments: false
-hideSummary: false
-searchHidden: true
 ShowReadingTime: false
 ShowBreadCrumbs: false
-ShowPostNavLinks: true
+ShowPostNavLinks: false
 ShowWordCount: false
 ---
 

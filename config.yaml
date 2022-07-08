@@ -3,10 +3,9 @@ languageCode: en-us
 title: "meaculpa.dev - driven by curiosity"
 theme: "PaperMod"
 
-enableRobotsTXT: true
+enableRobotsTXT: false
 buildDrafts: false
 buildFuture: false
-buildExpired: false
 
 googleAnalytics: 
 
@@ -14,46 +13,65 @@ minify:
   disableXML: true
   minifyOutput: true
 
+menu:
+  main:
+    - identifier: about
+      name: ABOUT
+      url: /about/
+      weight: 10
+    - identifier: blog
+      name: BLOG
+      url: /posts/
+      weight: 20
+    - identifier: projects
+      name: PROJECTS
+      url: /projects/
+      weight: 30
+    - identifier: search
+      name: SEARCH
+      url: /search/
+      weight: 40
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+
 params:
-  env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: ExampleSite
-  description: "ExampleSite description"
-  keywords: [Blog, Portfolio, PaperMod]
-  images: ["<link or path of image for opengraph, twitter-cards>"]
+  env: production
   DateFormat: "January 2, 2006"
   defaultTheme: auto
   disableThemeToggle: false
-
   ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   ShowWordCount: true
-  ShowRssButtonInSectionTermList: true
+  ShowRssButtonInSectionTermList: false
   UseHugoToc: true
   disableSpecial1stPost: false
   disableScrollToTop: false
   comments: false
   hideMeta: false
   hideSummary: false
-  showtoc: true
-  tocopen: true
-
+  searchHidden: false
+  showToc: true
+  tocOpen: true
   assets:
-    # disableHLJS: true # to disable highlight.js
-    # disableFingerprinting: true
     favicon: "<link / abs url>"
     favicon16x16: "<link / abs url>"
     favicon32x32: "<link / abs url>"
     apple_touch_icon: "<link / abs url>"
     safari_pinned_tab: "<link / abs url>"
-
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
   label:
     text: "MEACULPA.DEV"
     #icon: /apple-touch-icon.png
     #iconHeight: 35
-
   profileMode:
     enabled: true
     title: Dominic Schuld
@@ -69,24 +87,17 @@ params:
         url: posts
       - name: Projects
         url: projects
-
   socialIcons:
     - name: github
       url: "https://github.com/meacu1pa"
     - name: twitter
       url: "https://twitter.com/meaculpadev"
-
-  analytics:
-    google:
-      SiteVerificationTag: "XYZabc"
-
   cover:
-    hidden: true # hide everywhere but not in structured data
-    hiddenInList: true # hide on list pages and home
-    hiddenInSingle: true # hide on single page
+    hidden: true
+    hiddenInList: true
+    hiddenInSingle: true
 
-  # for search
-  # https://fusejs.io/api/options.html
+  # Search
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
@@ -94,26 +105,4 @@ params:
     distance: 1000
     threshold: 0.4
     minMatchCharLength: 0
-    keys: ["title", "permalink", "summary", "content"]
-menu:
-  main:
-    - identifier: blog
-      name: BLOG
-      url: /posts/
-      weight: 20
-    #- identifier: categories
-    #  name: CATEGORIES
-    #  url: /categories/
-    #  weight: 10
-    #- identifier: tags
-    #  name: TAGS
-    #  url: /tags/
-    #  weight: 20
-    - identifier: projects
-      name: PROJECTS
-      url: /projects/
-      weight: 30
-    - identifier: about
-      name: ABOUT
-      url: /about/
-      weight: 10
+    keys: ["title", "description", "summary", "content"]

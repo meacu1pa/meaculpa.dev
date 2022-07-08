@@ -1,14 +1,11 @@
 ---
 title: "About me"
 description: "Who am I?"
-weight: 1
-aliases: ["/about"]
+summary: "Who am I?"
 comments: false
-disableShare: false
-hideSummary: false
 ShowReadingTime: false
 ShowBreadCrumbs: false
-ShowPostNavLinks: true
+ShowPostNavLinks: false
 ShowWordCount: false
 ---
 

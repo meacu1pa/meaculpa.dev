@@ -4,8 +4,8 @@ description: "Setup faasd on Ubuntu Server 22.04"
 summary: "Setup faasd on Ubuntu Server 22.04"
 date: 2022-06-22
 aliases: []
-tags: ["openfaas"]
 categories: ["tech"]
+tags: ["openfaas", "self-host", "docker"]
 cover:
     image: "<image path/url>" # image path/url
     alt: "<alt text>" # alt text

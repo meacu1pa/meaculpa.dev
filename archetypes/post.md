@@ -4,8 +4,8 @@ description: "Description goes here"
 summary: "Summary here"
 date: 2022-06-04
 aliases: []
+categories: ["category"]
 tags: ["tag"]
-categories: ["category1"]
 draft: true
 cover:
     image: "<image path/url>" # image path/url

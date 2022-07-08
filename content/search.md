@@ -1,7 +1,7 @@
 ---
 title: "Search"
-description: "Search meaculpa.dev"
-summary: "Search meaculpa.dev"
-placeholder: "Search meaculpa.dev"
+description: "Browse through meaculpa.dev..."
+summary: "Browse through meaculpa.dev..."
+placeholder: "What are you looking for?"
 layout: "search"
 ---

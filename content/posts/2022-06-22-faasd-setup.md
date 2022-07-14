@@ -6,6 +6,7 @@ date: 2022-06-22
 aliases: []
 categories: ["tech"]
 tags: ["openfaas", "self-host", "docker"]
+draft: false
 cover:
     image: "<image path/url>" # image path/url
     alt: "<alt text>" # alt text

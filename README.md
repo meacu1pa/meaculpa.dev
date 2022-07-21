@@ -6,7 +6,7 @@ My personal blog, hosted on [Deno Deploy](https://deno.com).
 
 Initialize git submodule, which contains the used theme "PaperMod":
 
-```
+```bash
 git submodule update --init --recursive
 ```
 
@@ -14,7 +14,7 @@ git submodule update --init --recursive
 
 Update remote repo for theme `PaperMod` to recent release:
 
-```
+```bash
 git submodule update --remote --merge
 ```
 
@@ -24,12 +24,12 @@ git submodule update --remote --merge
 
 Run development server with HMR and include drafts:
 
-```
+```bash
 hugo server -D
 ```
 
 ### Add post
 
-```
+```bash
 hugo new --kind post <name>
 ```

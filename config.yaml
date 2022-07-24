@@ -8,8 +8,6 @@ enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 
-googleAnalytics: 
-
 minify:
   disableXML: true
   minifyOutput: true

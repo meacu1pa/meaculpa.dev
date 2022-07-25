@@ -1,18 +1,12 @@
 ---
-title: "Run functions efficiently on a single VPS, no k8s overhead!"
-description: "Setup faasd on Ubuntu Server 22.04"
-summary: "Setup faasd on Ubuntu Server 22.04"
+title: "Run functions efficiently on a single VPS, no k8s!"
+description: "Run OpenFaaS (faasd) on your Ubuntu Server 22.04"
+summary: "Run OpenFaaS (faasd) on your Ubuntu Server 22.04"
 date: 2022-06-22
 aliases: []
 categories: ["tech"]
-tags: ["openfaas", "self-host", "docker"]
+tags: ["openfaas", "self-host", "container"]
 draft: false
-cover:
-    image: "<image path/url>" # image path/url
-    alt: "<alt text>" # alt text
-    caption: "<text>" # display caption under cover
-    relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
 editPost:
     URL: "https://github.com/meacu1pa/meaculpa.dev/tree/main/content"
     Text: "Suggest Changes" # edit text
@@ -23,13 +17,15 @@ editPost:
 
 > Info: This article is still considered WIP.
 
-[OpenFaaS](http://openfaas.com) is a cloud agnostic OpenSource project to run functions on your own terms. `faasd` packs the same punch, but you can host it on a single VPS, without all of the `k8s` overhead.
+[OpenFaaS](http://openfaas.com) is a cloud agnostic OpenSource project to run functions on your own terms. `faasd` packs the same punch, but you can host it on a single VPS, without all of the `k8s` overhead. What you will get is a fully fledged FaaS engine with queueing out of the box.
 
 Let's start setting it up:
 
 SSH into server, then `sudo apt update && sudo apt upgrade -y`.
 
 ## Install Caddy
+
+We will use [Caddy](https://caddyserver.com/) as a reverse proxy, to link to our functions.
 
 ```bash
 sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https
@@ -50,7 +46,7 @@ cd faasd
 
 ### Configure faasd docker-compose.yaml
 
-Change port mapping so `faasd gateway` only accepts calls via `localhost`:
+Change port mapping so that the `faasd gateway` only accepts calls via `localhost`:
 
 `sudo nano /var/lib/faasd/docker-compose.yaml`
 
@@ -61,9 +57,11 @@ gateway:
             -"127.0.0.1:8080:8080"
 ```
 
-Then restart faasd services: `sudo systemctl daemon-reload && sudo systemctl restart faasd`
+Then restart the faasd service: `sudo systemctl daemon-reload && sudo systemctl restart faasd`
 
 ### Enable firewall (optional)
+
+For security reasons, you can enable firewall rules accordingly:
 
 ```bash
 sudo ufw default deny incoming
@@ -75,9 +73,9 @@ sudo ufw allow from 10.62.0.0/16 to 10.62.0.0/16
 sudo ufw enable
 ```
 
-### Obtain faasd credentials
+### Obtain your faasd credentials
 
-Store output somewhere safe for later reference:
+Store the following output somewhere safe for later reference:
 
 ```bash
 sudo cat /var/lib/faasd/secrets/basic-auth-password ;echo
@@ -85,7 +83,7 @@ sudo cat /var/lib/faasd/secrets/basic-auth-password ;echo
 
 The associated user for this password is `admin`.
 
-## Configure Caddy as reverse proxy
+## Configure Caddy as a reverse proxy
 
 Open Caddyfile via `sudo nano /etc/caddy/Caddyfile` and add:
 
@@ -100,7 +98,7 @@ faasd.domain.tld {
 }
 ```
 
-Reload Caddy via  `systemctl reload caddy`.
+Reload Caddy via `systemctl reload caddy`.
 
 ## Install store functions
 
@@ -121,6 +119,8 @@ cat faasd.txt | faas-cli login --username admin --password-stdin
 faas-cli store deploy cows
 ```
 
+The `faas-cli` can also be used to hook up continuous deployments via Gitlab CI/CD or GitHub Actions.
+
 ## Use Caddy as a reverse proxy for a specific function
 
 Open Caddyfile via `sudo nano /etc/caddy/Caddyfile` and add:
@@ -137,3 +137,7 @@ cows.domain.tld {
 ```
 
 Reload Caddy via `systemctl reload caddy`.
+
+## The End
+
+That's it, you're good to go - happy hacking 👨‍💻!

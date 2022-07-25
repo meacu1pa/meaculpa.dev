@@ -1,7 +1,7 @@
 ---
-title: "Run functions efficiently on a single VPS, no k8s!"
-description: "Run OpenFaaS (faasd) on your Ubuntu Server 22.04"
-summary: "Run OpenFaaS (faasd) on your Ubuntu Server 22.04"
+title: "Run functions on your own terms, no k8s!"
+description: "Run OpenFaaS (faasd) on your Ubuntu Server 22.04 VPS"
+summary: "Run OpenFaaS (faasd) on your Ubuntu Server 22.04 VPS"
 date: 2022-06-22
 aliases: []
 categories: ["tech"]

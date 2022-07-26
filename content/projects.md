@@ -1,5 +1,5 @@
 ---
-title: "My project portfolio"
+title: "Project portfolio"
 description: "A list of a few of the things I built over the years."
 summary: "A list of a few of the things I built over the years."
 comments: false

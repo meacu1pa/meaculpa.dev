@@ -9,11 +9,9 @@ ShowPostNavLinks: false
 ShowWordCount: false
 ---
 
-## WIP
+## Hey there 👋
 
-I'm planning to update this page soon, stay tuned :)
-
-### Hey there 👋
+> Info: This article is still WIP.
 
 I'm Dom, nice to meet you!
 

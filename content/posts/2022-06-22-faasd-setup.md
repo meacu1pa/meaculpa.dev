@@ -15,7 +15,7 @@ editPost:
 
 ## What is OpenFaas?
 
-> Info: This article is still considered WIP.
+> Info: This article is still WIP.
 
 [OpenFaaS](http://openfaas.com) is a cloud agnostic OpenSource project to run functions on your own terms. `faasd` packs the same punch, but you can host it on a single VPS, without all of the `k8s` overhead. What you will get is a fully fledged FaaS engine with queueing out of the box.
 

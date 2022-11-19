@@ -11,8 +11,6 @@ ShowWordCount: false
 
 ## Hey there 👋
 
-> Info: This article is still WIP.
-
 I'm Dom, nice to meet you!
 
 After graduating in geospatial data science, I decided it's time to shift my focus on the software engineering side of things. I've got a bunch of experience working with PHP, especially the Symfony framework. In my free time I like to explore new tools, technologies and languages - currently the [Deno](https://deno.land/) ecosystem is my jam.

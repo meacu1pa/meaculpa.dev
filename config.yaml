@@ -87,10 +87,10 @@ params:
       - name: Projects
         url: projects
   socialIcons:
-    - name: github
-      url: "https://github.com/meacu1pa"
     - name: twitter
       url: "https://twitter.com/meaculpadev"
+    - name: github
+      url: "https://github.com/meacu1pa"
     - name: linkedin
       url: "https://www.linkedin.com/in/dominic-schuld"
   cover:

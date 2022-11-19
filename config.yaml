@@ -89,10 +89,10 @@ params:
   socialIcons:
     - name: github
       url: "https://github.com/meacu1pa"
-    - name: linkedin
-      url: "https://www.linkedin.com/in/dominic-schuld"
     - name: twitter
       url: "https://twitter.com/meaculpadev"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/dominic-schuld"
   cover:
     hidden: true
     hiddenInList: true

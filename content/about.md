@@ -11,11 +11,11 @@ ShowWordCount: false
 
 ## Hey there 👋
 
-I'm Dom, nice to meet you!
+My name is Dom, nice to meet you!
+
+I am a full-stack software engineer focused on continuously shipping robust web applications. During my career in software engineering I crossed multiple domains and tackled versatile technical challenges. Being a servant team player, I value and practice candid feedback. My number one driver is curiosity.
 
 After graduating in the field of geographic information systems (GIS), I decided it's time to shift my focus on the software engineering side of things. I've got a bunch of experience working with PHP, especially the Symfony framework. In my free time I like to explore new tools, technologies and languages - currently the [Deno](https://deno.land/) ecosystem is my jam.
-
-During my career in software engineering and geospatial data science I crossed several domains and diverse technical challenges. My focus always lies upon designing and delivering maintainable, future-proof systems - all while avoiding to over-engineer. As a servant team player I value and practice candid feedback. My number one driver is curiosity!
 
 Besides writing code I also enjoy scratching vinyl records (turntablism), practicing martial arts and reading a good book.
 

@@ -36,5 +36,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: meaculpa
-          entrypoint: https://deno.land/std@0.182.0/http/file_server.ts
+          entrypoint: https://deno.land/std@0.183.0/http/file_server.ts
           root: public

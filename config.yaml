@@ -2,7 +2,6 @@ baseURL: "https://meaculpa.dev/"
 languageCode: en-us
 title: "meaculpa.dev - driven by curiosity"
 theme: "PaperMod"
-googleAnalytics: G-JP8WNL0D88
 
 enableRobotsTXT: true
 buildDrafts: false

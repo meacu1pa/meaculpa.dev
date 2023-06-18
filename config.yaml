@@ -63,9 +63,6 @@ params:
     favicon32x32: "<link / abs url>"
     apple_touch_icon: "<link / abs url>"
     safari_pinned_tab: "<link / abs url>"
-  #analytics:
-  #  google:
-  #    SiteVerificationTag: "XYZabc"
   label:
     text: "meaculpa.dev"
     #icon: /apple-touch-icon.png
